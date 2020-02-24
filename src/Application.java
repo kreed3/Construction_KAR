@@ -1,4 +1,14 @@
-
+/**
+ * The Application class includes the main method 
+ * and creates objects from each class in the package
+ * ALL getters and setters are tested in this method
+ * 
+ * @author Kaitlyn Reed
+ * @version 4.12
+ * Construction Project
+ * SPRING/2020
+ * 
+ */
 public class Application {
 
 	public static void main(String[] args) {
@@ -6,11 +16,13 @@ public class Application {
 		// BUILDING
 		
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		Building A = new  Building();
 		A.draw();
 		System.out.println(A.toString());
 		System.out.println(A.displayData());
 		
+		// Testing the preferred constructor
 		Building a = new  Building("Big Building", "123 Main Street | Louisville, Kentucky 40201", 2540, "Residential", "R1");
 		a.draw();
 		System.out.println(a.toString());
@@ -20,14 +32,17 @@ public class Application {
 		// END BUILDING
 		
 		
+		
 		// BUSINESS
 		
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		Business B = new Business();
 		B.draw();
 		System.out.println(B.toString());
 		System.out.println(B.displayData());
 		
+		// Testing the preferred constructor
 		Business b = new Business("New Business", "123 Main Street | Louisville, Kentucky 40201", 2540, "Business", "B", 5);
 		b.draw();
 		System.out.println(b.toString());
@@ -37,14 +52,17 @@ public class Application {
 		// END BUSINESS
 		
 		
+		
 		// MALL
 		
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		Mall C = new Mall();
 		C.draw();
 		System.out.println(C.toString());
 		System.out.println(C.displayData());
 		
+		// Testing the preferred constructor
 		Mall c = new Mall("Oxfoord Mall", "123 Main Street | Louisville, Kentucky 40201", 2540, "Business", "B", 5, 4, 2000.0, 300);
 		c.draw();
 		System.out.println(c.toString());
@@ -54,14 +72,17 @@ public class Application {
 		// END MALL
 		
 		
+		
 		// RESIDENTIAL
 		
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		Residential D = new Residential();
 		D.draw();
 		System.out.println(D.toString());
 		System.out.println(D.displayData());
 		
+		// Testing the preferred constructor
 		Residential d = new Residential("Gaines House", "123 Main Street | Louisville, Kentucky 40201", 2540, "Residential", "R1", 5, 4, true);
 		d.draw();
 		System.out.println(d.toString());
@@ -71,14 +92,17 @@ public class Application {
 		// END RESIDENTIAL
 		
 		
+		
 		// APARTMENT
 		
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		Apartment E = new Apartment();
 		E.draw();
 		System.out.println(E.toString());
 		System.out.println(E.displayData());
 		
+		// Testing the preferred constructor
 		Apartment e = new Apartment("Room 101", "123 Main Street | Louisville, Kentucky 40201", 2540, "Residential", "R1", 5, 4, true, 5, 2000.0, false);
 		e.draw();
 		System.out.println(e.toString());
@@ -88,25 +112,30 @@ public class Application {
 		// END APARTMENT
 		
 		
+		
 		// SINGLE FAMILY HOME
 		 
 		System.out.println("---------------------------------------------");
+		// Testing the empty-arg constructor
 		SingleFamilyHome F = new SingleFamilyHome();
 		F.draw();
 		System.out.println(F.toString());
 		System.out.println(F.displayData());
 		
+		// Testing the preferred constructor
 		SingleFamilyHome f = new SingleFamilyHome("A-Frame Home", "123 Main Street | Louisville, Kentucky 40201", 2540, "Residential", "R1", 5, 4, true, false);
 		f.draw();
 		System.out.println(f.toString());
 		System.out.println(f.displayData());
 		System.out.println("---------------------------------------------");
-		System.out.println("---------------------------------------------");
 		
 		// END SINGLE FAMILY HOME
 		
 		
-		// TESTING GETTERS AND SETTERS
+		System.out.println("---------------------------------------------");
+		
+		
+		//*******************TESTING GETTERS AND SETTERS*******************
 		// BUILDING CLASS G AND S
 		System.out.println("TESTING GETTERS AND SETTERS FOUND IN THE BUILDING CLASS\n");
 		
@@ -200,6 +229,6 @@ public class Application {
 		System.out.println("Now it is " + f.isGarage() + " that there is parking available.\n");
 		
 		System.out.println("---------------------------------------------");
-	}
+	} // END MAIN
 	
-}
+} // END APPLICATION
